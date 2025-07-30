@@ -7,7 +7,7 @@ const About = () => {
     { icon: Users, label: "Fortune Clients", value: "Multiple" },
     { icon: Clock, label: "Years Experience", value: "10+" },
     { icon: Award, label: "Service Quality", value: "World Class" },
-    { icon: TrendingUp, label: "Team Size", value: "2-10" }
+    { icon: TrendingUp, label: "Team Size", value: "25+" }
   ];
 
   return (
