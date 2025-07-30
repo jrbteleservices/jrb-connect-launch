@@ -19,22 +19,22 @@ const Hero = () => {
           <div className="text-white space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                Connect to the
+                World Class
                 <span className="block bg-gradient-to-r from-primary-glow to-accent bg-clip-text text-transparent">
-                  Future
+                  Contact Centers
                 </span>
               </h1>
               <p className="text-xl lg:text-2xl text-white/90 leading-relaxed">
-                Premium telecommunications services that keep your business connected, 
-                secure, and ahead of the competition.
+                Pioneer in Voice Based Contact Centers operating from Mumbai, India. 
+                Delivering world-class competencies with Fortune clients for over 10 years.
               </p>
             </div>
             
             <div className="space-y-3">
               {[
-                "High-Speed Internet Solutions",
-                "24/7 Technical Support",
-                "Enterprise-Grade Security"
+                "Voice Based Contact Center Solutions",
+                "Fortune Client Experience",
+                "Mumbai-Based Quality Operations"
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-accent" />
@@ -62,15 +62,15 @@ const Hero = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-accent rounded-full"></div>
-                    <span className="text-white/90">99.9% Network Uptime</span>
+                    <span className="text-white/90">10+ Years Experience</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-primary-glow rounded-full"></div>
-                    <span className="text-white/90">Fastest Installation</span>
+                    <span className="text-white/90">Fortune Client Portfolio</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-accent rounded-full"></div>
-                    <span className="text-white/90">Competitive Pricing</span>
+                    <span className="text-white/90">Mumbai Cost Advantage</span>
                   </div>
                 </div>
               </div>

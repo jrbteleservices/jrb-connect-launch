@@ -4,10 +4,10 @@ import servicesIcon from "@/assets/services-icon.jpg";
 
 const About = () => {
   const stats = [
-    { icon: Users, label: "Happy Customers", value: "10,000+" },
-    { icon: Clock, label: "Years Experience", value: "15+" },
-    { icon: Award, label: "Network Uptime", value: "99.9%" },
-    { icon: TrendingUp, label: "Growth Rate", value: "40%" }
+    { icon: Users, label: "Fortune Clients", value: "Multiple" },
+    { icon: Clock, label: "Years Experience", value: "10+" },
+    { icon: Award, label: "Service Quality", value: "World Class" },
+    { icon: TrendingUp, label: "Team Size", value: "2-10" }
   ];
 
   return (
@@ -20,13 +20,13 @@ const About = () => {
                 About <span className="bg-gradient-primary bg-clip-text text-transparent">JRB Tele Services</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-                With over 15 years of excellence in telecommunications, JRB Tele Services has been 
-                at the forefront of connecting communities and businesses across the region.
+                Welcome to the world of JRB Tele Services - a pioneer in the field of Voice Based Contact Centers 
+                operating out of the low-cost, high quality location of Mumbai, India.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We pride ourselves on delivering reliable, high-quality telecommunications solutions 
-                that drive growth and innovation. Our commitment to customer satisfaction and 
-                technological advancement has made us a trusted partner for thousands of clients.
+                Founded in 2015, JRB Tele Services has obtained "World Class" competencies working with Fortune clients 
+                for the past 10 years. With effective solutions that offer continuous value and backed by an able and 
+                experienced management team, JRB Tele Services has what it takes to help you in your business.
               </p>
             </div>
             
@@ -46,7 +46,7 @@ const About = () => {
             <div className="relative">
               <img 
                 src={servicesIcon} 
-                alt="Telecommunications Services" 
+                alt="Contact Center Services" 
                 className="w-full rounded-2xl shadow-elegant"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
@@ -58,8 +58,8 @@ const About = () => {
                   <Award className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground">ISO Certified</div>
-                  <div className="text-sm text-muted-foreground">Quality Assured</div>
+                  <div className="font-semibold text-foreground">Founded 2015</div>
+                  <div className="text-sm text-muted-foreground">Mumbai Based</div>
                 </div>
               </div>
             </Card>

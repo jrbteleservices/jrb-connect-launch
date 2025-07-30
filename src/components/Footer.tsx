@@ -16,8 +16,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-white/80 leading-relaxed">
-              Connecting communities with reliable telecommunications solutions 
-              for over 15 years. Your trusted partner for all connectivity needs.
+              Pioneer in Voice Based Contact Centers operating from Mumbai, India. 
+              Serving Fortune clients with world-class competencies for over 10 years.
             </p>
             <div className="flex space-x-4">
               <Facebook className="w-5 h-5 text-white/60 hover:text-white cursor-pointer transition-colors" />
@@ -30,11 +30,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-white/80">
-              <li><a href="#" className="hover:text-white transition-colors">High-Speed Internet</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Voice Solutions</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Digital TV</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Network Security</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Enterprise Solutions</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Inbound Call Centers</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Outbound Call Centers</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Voice Based Solutions</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">BPO Services</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Custom Solutions</a></li>
             </ul>
           </div>
           
@@ -54,7 +54,7 @@ const Footer = () => {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4" />
-                <span>+91 XXX XXX XXXX</span>
+                <span>+91 9766724740</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4" />
@@ -62,7 +62,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 mt-1" />
-                <span>123 Business District<br />Your City, State - 123456</span>
+                <span>Vasai, Mumbai<br />Maharashtra 401202, India</span>
               </div>
             </div>
           </div>

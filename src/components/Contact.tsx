@@ -9,19 +9,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+91 XXX XXX XXXX", "+91 XXX XXX XXXX"],
+      details: ["+91 9766724740"],
       description: "Call us for immediate assistance"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@jrbteleservices.com", "support@jrbteleservices.com"],
+      details: ["info@jrbteleservices.com"],
       description: "Send us your queries anytime"
     },
     {
       icon: MapPin,
       title: "Address",
-      details: ["123 Business District", "Your City, State - 123456"],
+      details: ["Vasai, Mumbai", "Maharashtra 401202, India"],
       description: "Visit our office location"
     },
     {
@@ -40,8 +40,8 @@ const Contact = () => {
             Get in <span className="bg-gradient-primary bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to upgrade your telecommunications experience? Contact us today 
-            for a free consultation and personalized service recommendations.
+            Ready to experience world-class contact center solutions? Contact us today 
+            for a free consultation and discover how our Mumbai-based operations can benefit your business.
           </p>
         </div>
         
@@ -84,11 +84,11 @@ const Contact = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Phone</label>
-                  <Input placeholder="+91 XXX XXX XXXX" className="border-border/50" />
+                  <Input placeholder="+91 9766724740" className="border-border/50" />
                 </div>
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Service Interested</label>
-                  <Input placeholder="Internet, Voice, etc." className="border-border/50" />
+                  <Input placeholder="Contact Center, BPO, etc." className="border-border/50" />
                 </div>
               </div>
               
