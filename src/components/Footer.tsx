@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center">
-              <img src={logo} alt="JRB Tele Services logo" className="h-16 w-auto object-contain rounded-md bg-white p-2" />
+              <img src={logo} alt="JRB Tele Services logo" className="h-24 w-auto object-contain rounded-md bg-white p-2" />
             </div>
             <p className="text-white/80 leading-relaxed">
               Pioneer in Voice Based Contact Centers operating from Mumbai, India. 

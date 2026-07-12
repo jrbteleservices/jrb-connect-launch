@@ -44,12 +44,14 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Button variant="hero" size="xl" className="group w-full sm:w-auto">
-                Get Started Today
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <Button asChild variant="hero" size="xl" className="group w-full sm:w-auto">
+                <a href="#contact">
+                  Get Started Today
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
-              <Button variant="outline-hero" size="xl" className="w-full sm:w-auto">
-                View Services
+              <Button asChild variant="outline-hero" size="xl" className="w-full sm:w-auto">
+                <a href="#services">View Services</a>
               </Button>
             </div>
           </div>
