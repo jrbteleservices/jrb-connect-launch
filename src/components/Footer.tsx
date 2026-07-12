@@ -7,12 +7,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <img src={logo} alt="JRB Tele Services logo" className="w-12 h-12 object-contain rounded-md bg-white p-1" />
-              <div>
-                <h3 className="text-xl font-bold">JRB TELE SERVICES</h3>
-                <p className="text-xs text-white/80">PVT LIMITED</p>
-              </div>
+            <div className="flex items-center">
+              <img src={logo} alt="JRB Tele Services logo" className="h-16 w-auto object-contain rounded-md bg-white p-2" />
             </div>
             <p className="text-white/80 leading-relaxed">
               Pioneer in Voice Based Contact Centers operating from Mumbai, India. 

@@ -7,12 +7,8 @@ const Header = () => {
     <header className="bg-background/95 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <img src={logo} alt="JRB Tele Services logo" className="w-12 h-12 object-contain rounded-md" />
-            <div>
-              <h1 className="text-xl font-bold text-foreground">JRB TELE SERVICES</h1>
-              <p className="text-xs text-muted-foreground">PVT LIMITED</p>
-            </div>
+          <div className="flex items-center">
+            <img src={logo} alt="JRB Tele Services logo" className="h-14 w-auto object-contain" />
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
