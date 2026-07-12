@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import logo from "@/assets/jrb-logo.jpeg";
 
 const Footer = () => {
   return (
@@ -6,10 +7,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">J</span>
-              </div>
+            <div className="flex items-center space-x-3">
+              <img src={logo} alt="JRB Tele Services logo" className="w-12 h-12 object-contain rounded-md bg-white p-1" />
               <div>
                 <h3 className="text-xl font-bold">JRB TELE SERVICES</h3>
                 <p className="text-xs text-white/80">PVT LIMITED</p>

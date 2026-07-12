@@ -17,9 +17,6 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 214 100% 50%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 214 100% 65%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -27,22 +24,29 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 199 89% 48%;
-    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 214 100% 50%;
+    --primary: 18 95% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 38 100% 60%;
+    --accent: 42 100% 55%;
+    --accent-foreground: 24 40% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 30% 90%;
+    --input: 30 30% 90%;
+    --ring: 18 95% 55%;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(214 100% 50%), hsl(199 89% 48%));
-    --gradient-hero: linear-gradient(135deg, hsl(214 100% 15%), hsl(214 100% 25%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
-    --shadow-elegant: 0 10px 30px -10px hsl(214 100% 50% / 0.2);
-    --shadow-card: 0 4px 20px hsl(214 100% 50% / 0.1);
+    --gradient-primary: linear-gradient(135deg, hsl(42 100% 55%), hsl(18 95% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(20 60% 12%), hsl(18 80% 25%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(35 40% 98%));
+    --shadow-elegant: 0 10px 30px -10px hsl(18 95% 55% / 0.3);
+    --shadow-card: 0 4px 20px hsl(18 95% 55% / 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
@@ -74,9 +78,6 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 214 100% 55%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 214 100% 70%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -84,8 +85,18 @@ All colors MUST be HSL.
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 199 89% 55%;
-    --accent-foreground: 0 0% 100%;
+    --primary: 18 95% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 38 100% 65%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 42 100% 60%;
+    --accent-foreground: 24 40% 15%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
