@@ -21,11 +21,11 @@ const Hero = () => {
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
                 World Class
                 <span className="block bg-gradient-to-r from-primary-glow to-accent bg-clip-text text-transparent">
-                  Contact Centers
+                  Contact Center
                 </span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-xl">
-                Pioneer in Voice Based Contact Centers operating from Mumbai, India. 
+                Pioneer in Voice Based Contact Center operating from Mumbai, India. 
                 Delivering world-class competencies with Fortune clients for over 10 years.
               </p>
             </div>

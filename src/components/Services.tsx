@@ -6,13 +6,13 @@ const Services = () => {
   const services = [
     {
       icon: Phone,
-      title: "Inbound Call Centers",
+      title: "Inbound Call Center",
       description: "Professional inbound customer service solutions handling customer inquiries, support, and order processing with excellence.",
       features: ["Customer Support", "Order Processing", "Technical Helpdesk"]
     },
     {
       icon: HeadphonesIcon,
-      title: "Outbound Call Centers",
+      title: "Outbound Call Center",
       description: "Strategic outbound calling campaigns for lead generation, sales, market research, and customer retention programs.",
       features: ["Lead Generation", "Sales Campaigns", "Market Research"]
     },
