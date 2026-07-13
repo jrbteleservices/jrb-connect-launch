@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Award, Users, Clock, TrendingUp } from "lucide-react";
-import servicesIcon from "@/assets/services-icon.jpg";
+import aboutVideo from "@/assets/about-callcenter.mp4.asset.json";
 
 const About = () => {
   const stats = [
@@ -44,12 +44,15 @@ const About = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-primary/10 rounded-2xl blur-3xl"></div>
             <div className="relative">
-              <img 
-                src={servicesIcon} 
-                alt="Contact Center Services" 
+              <video
+                src={aboutVideo.url}
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="w-full rounded-2xl shadow-elegant"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl pointer-events-none"></div>
             </div>
             
             <Card className="absolute -bottom-8 -left-8 p-6 bg-white border-border/50 shadow-elegant">
