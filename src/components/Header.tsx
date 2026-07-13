@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail } from "lucide-react";
-import logo from "@/assets/jrb-logo.jpeg";
+import logo from "@/assets/jrb-logo.png";
 
 const Header = () => {
   return (
