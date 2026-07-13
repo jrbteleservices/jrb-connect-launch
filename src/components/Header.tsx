@@ -7,9 +7,9 @@ const Header = () => {
     <header className="bg-background/95 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
+          <a href="#top" aria-label="Back to top" className="flex items-center">
             <img src={logo} alt="JRB Tele Services logo" className="h-20 sm:h-24 w-auto object-contain" />
-          </div>
+          </a>
           
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
