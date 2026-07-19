@@ -2,54 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 33% 98%;
+    --foreground: 239 45% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 239 45% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 239 45% 12%;
 
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 239 30% 96%;
+    --secondary-foreground: 239 57% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 239 20% 95%;
+    --muted-foreground: 239 15% 40%;
 
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --primary: 18 95% 55%;
+    --primary: 239 57% 35%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 38 100% 60%;
-    --accent: 42 100% 55%;
-    --accent-foreground: 24 40% 15%;
+    --primary-glow: 239 70% 55%;
+    --accent: 239 40% 92%;
+    --accent-foreground: 239 57% 25%;
+    --cta: 360 100% 45%;
+    --cta-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 30% 90%;
-    --input: 30 30% 90%;
-    --ring: 18 95% 55%;
+    --border: 239 20% 90%;
+    --input: 239 20% 90%;
+    --ring: 239 57% 35%;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(42 100% 55%), hsl(18 95% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(20 60% 12%), hsl(18 80% 25%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(35 40% 98%));
-    --shadow-elegant: 0 10px 30px -10px hsl(18 95% 55% / 0.3);
-    --shadow-card: 0 4px 20px hsl(18 95% 55% / 0.15);
+    --gradient-primary: linear-gradient(135deg, hsl(239 57% 35%), hsl(239 70% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(239 60% 15%) 0%, hsl(239 57% 28%) 60%, hsl(239 70% 40%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(239 30% 98%));
+    --gradient-cta: linear-gradient(135deg, hsl(360 100% 45%), hsl(355 90% 55%));
+    --shadow-elegant: 0 10px 40px -12px hsl(239 57% 35% / 0.35);
+    --shadow-card: 0 4px 24px hsl(239 40% 30% / 0.08);
+    --shadow-cta: 0 8px 24px -6px hsl(360 100% 45% / 0.45);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --radius: 0.5rem;
+    --radius: 0.875rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -69,7 +75,7 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 239 45% 8%;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -85,9 +91,9 @@ All colors MUST be HSL.
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --primary: 18 95% 60%;
+    --primary: 239 70% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 38 100% 65%;
+    --primary-glow: 239 80% 70%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -95,8 +101,10 @@ All colors MUST be HSL.
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 42 100% 60%;
-    --accent-foreground: 24 40% 15%;
+    --accent: 239 40% 20%;
+    --accent-foreground: 210 40% 98%;
+    --cta: 360 100% 55%;
+    --cta-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
@@ -121,6 +129,17 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/60 backdrop-blur-xl border border-white/40;
+  }
+  .glass-dark {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
   }
 }
