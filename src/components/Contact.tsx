@@ -1,111 +1,78 @@
-import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: Phone,
-      title: "Phone",
-      details: ["+91 9766724740"],
-      description: "Call us for immediate assistance"
-    },
-    {
-      icon: Mail,
-      title: "Email",
-      details: ["info@jrbteleservices.com"],
-      description: "Send us your queries anytime"
-    },
-    {
-      icon: MapPin,
-      title: "Address",
-      details: ["Vasai, Mumbai", "Maharashtra 401202, India"],
-      description: "Visit our office location"
-    },
-    {
-      icon: Clock,
-      title: "Business Hours",
-      details: ["Mon - Fri: 9:00 AM - 6:00 PM", "Sat: 9:00 AM - 2:00 PM"],
-      description: "We're here to help you"
-    }
-  ];
-
   return (
-    <section id="contact" className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Get in <span className="bg-gradient-primary bg-clip-text text-transparent">Touch</span>
+    <section id="contact" className="py-20 sm:py-28 bg-gradient-hero relative overflow-hidden">
+      <div className="absolute -top-24 right-1/4 w-96 h-96 bg-primary-glow/20 rounded-full blur-3xl" aria-hidden />
+      <div className="relative container mx-auto px-4 sm:px-6">
+        <div className="max-w-3xl text-white">
+          <span className="text-xs font-semibold tracking-[0.2em] text-cta uppercase">Get started</span>
+          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+            Let's build your pipeline.
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to experience world-class contact center solutions? Contact us today 
-            for a free consultation and discover how our Mumbai-based operations can benefit your business.
+          <p className="mt-4 text-lg text-white/80">
+            Tell us about your growth targets. We'll come back within one business day with a tailored plan.
           </p>
         </div>
-        
-        <div className="grid lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-1 space-y-6">
-            {contactInfo.map((info, index) => (
-              <Card key={index} className="p-6 bg-gradient-card border-border/50 shadow-card hover:shadow-elegant transition-all duration-300">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <info.icon className="w-6 h-6 text-white" />
+
+        <div className="mt-12 grid lg:grid-cols-5 gap-6">
+          <div className="lg:col-span-2 space-y-4">
+            {[
+              { icon: Phone, t: "Phone", v: "+91 9766724740" },
+              { icon: Mail, t: "Email", v: "info@jrbteleservices.com" },
+              { icon: MapPin, t: "HQ", v: "Vasai, Mumbai · Maharashtra 401202, India" },
+              { icon: Clock, t: "Hours", v: "24/7 Operations · IST/AEST/EST/GMT" },
+            ].map((c) => (
+              <div key={c.t} className="glass-dark rounded-2xl p-5 text-white">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+                    <c.icon className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">{info.title}</h3>
-                    <div className="space-y-1 mb-2">
-                      {info.details.map((detail, idx) => (
-                        <p key={idx} className="text-sm text-muted-foreground">{detail}</p>
-                      ))}
-                    </div>
-                    <p className="text-xs text-muted-foreground/80">{info.description}</p>
+                    <div className="text-xs uppercase tracking-widest text-white/60">{c.t}</div>
+                    <div className="font-medium mt-1">{c.v}</div>
                   </div>
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
-          
-          <Card className="lg:col-span-2 p-8 bg-gradient-card border-border/50 shadow-card">
-            <h3 className="text-2xl font-bold text-foreground mb-6">Send us a Message</h3>
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">Full Name</label>
-                  <Input placeholder="Your name" className="border-border/50" />
-                </div>
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">Email</label>
-                  <Input type="email" placeholder="your.email@example.com" className="border-border/50" />
-                </div>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">Phone</label>
-                  <Input placeholder="+91 9766724740" className="border-border/50" />
-                </div>
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">Service Interested</label>
-                  <Input placeholder="Contact Center, BPO, etc." className="border-border/50" />
-                </div>
-              </div>
-              
+
+          <form
+            className="lg:col-span-3 rounded-3xl bg-white p-6 sm:p-8 shadow-elegant space-y-5"
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <h3 className="text-xl font-bold text-foreground">Send us a message</h3>
+            <div className="grid md:grid-cols-2 gap-4">
               <div>
-                <label className="text-sm font-medium text-foreground mb-2 block">Message</label>
-                <Textarea 
-                  placeholder="Tell us about your requirements..." 
-                  rows={4}
-                  className="border-border/50"
-                />
+                <label className="text-sm font-medium text-foreground mb-1.5 block">Full name</label>
+                <Input placeholder="Your name" required />
               </div>
-              
-              <Button variant="hero" size="lg" className="w-full">
-                Send Message
-              </Button>
-            </form>
-          </Card>
+              <div>
+                <label className="text-sm font-medium text-foreground mb-1.5 block">Work email</label>
+                <Input type="email" placeholder="you@company.com" required />
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div>
+                <label className="text-sm font-medium text-foreground mb-1.5 block">Company</label>
+                <Input placeholder="Company name" />
+              </div>
+              <div>
+                <label className="text-sm font-medium text-foreground mb-1.5 block">Region</label>
+                <Input placeholder="Australia, US, UK…" />
+              </div>
+            </div>
+            <div>
+              <label className="text-sm font-medium text-foreground mb-1.5 block">What do you need?</label>
+              <Textarea rows={4} placeholder="e.g. B2B appointment setting for our Sydney sales team." />
+            </div>
+            <Button type="submit" variant="cta" size="lg" className="w-full">
+              Book my Growth Call
+            </Button>
+          </form>
         </div>
       </div>
     </section>
