@@ -10,13 +10,13 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 sm:py-28 bg-secondary/40">
+    <section id="about" className="py-24 sm:py-32 relative">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
-            <span className="text-xs font-semibold tracking-[0.2em] text-cta uppercase">About JRB</span>
-            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">
-              A Mumbai-built engine for global B2B growth.
+            <span className="text-xs font-semibold tracking-[0.25em] text-accent uppercase">About JRB</span>
+            <h2 className="mt-4 font-display text-3xl sm:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
+              A Mumbai-built engine for <span className="text-gradient">global B2B growth</span>.
             </h2>
             <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
               JRB Tele Services Pvt Ltd is a pioneer in voice-based contact centers, operating from the low-cost, high-quality talent hub of Mumbai, India since 2015.
@@ -27,9 +27,9 @@ const About = () => {
 
             <div className="mt-8 grid grid-cols-2 gap-4">
               {stats.map((s) => (
-                <div key={s.label} className="rounded-2xl bg-card border border-border p-5 shadow-card">
-                  <s.icon className="w-5 h-5 text-primary mb-2" />
-                  <div className="text-2xl font-bold text-foreground">{s.value}</div>
+                <div key={s.label} className="glass glass-hover p-5">
+                  <s.icon className="w-5 h-5 text-accent mb-2" />
+                  <div className="font-display text-2xl font-bold text-foreground">{s.value}</div>
                   <div className="text-sm text-muted-foreground">{s.label}</div>
                 </div>
               ))}
@@ -37,12 +37,14 @@ const About = () => {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-primary/15 rounded-3xl blur-3xl" aria-hidden />
-            <video
-              src={aboutVideo.url}
-              autoPlay loop muted playsInline
-              className="relative w-full rounded-3xl shadow-elegant"
-            />
+            <div className="absolute -inset-4 bg-primary/20 rounded-[2rem] blur-3xl" aria-hidden />
+            <div className="relative glass p-2">
+              <video
+                src={aboutVideo.url}
+                autoPlay loop muted playsInline
+                className="w-full rounded-[calc(1.25rem-0.25rem)]"
+              />
+            </div>
           </div>
         </div>
       </div>
