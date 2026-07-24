@@ -76,7 +76,7 @@ const Services = () => {
                 </div>
                 <p className="text-xs text-muted-foreground mb-3">AI voice-note transcription for sales & support teams.</p>
                 <Button asChild variant="cta" size="sm" className="w-full">
-                  <a href="#contact">Launch VoxFlowNote <ArrowRight className="w-4 h-4" /></a>
+                  <a href="https://voxflownote.lovable.app" target="_blank" rel="noopener noreferrer">Launch VoxFlowNote <ArrowRight className="w-4 h-4" /></a>
                 </Button>
               </div>
               <div className="rounded-xl border border-border p-4 hover:border-primary transition-colors">
@@ -86,7 +86,7 @@ const Services = () => {
                 </div>
                 <p className="text-xs text-muted-foreground mb-3">Real-time call scoring and ROI attribution.</p>
                 <Button asChild variant="cta" size="sm" className="w-full">
-                  <a href="#contact">Launch CallValue <ArrowRight className="w-4 h-4" /></a>
+                  <a href="https://callvalue.lovable.app/" target="_blank" rel="noopener noreferrer">Launch CallValue <ArrowRight className="w-4 h-4" /></a>
                 </Button>
               </div>
             </div>

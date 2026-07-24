@@ -22,8 +22,8 @@ const Footer = () => {
               <li><a href="#services" className="hover:text-white">B2B Lead Generation</a></li>
               <li><a href="#services" className="hover:text-white">Appointment Setting</a></li>
               <li><a href="#services" className="hover:text-white">SEO & Google Ads</a></li>
-              <li><a href="#services" className="hover:text-white">VoxFlowNote</a></li>
-              <li><a href="#services" className="hover:text-white">CallValue</a></li>
+              <li><a href="https://voxflownote.lovable.app" target="_blank" rel="noopener noreferrer" className="hover:text-white">VoxFlowNote</a></li>
+              <li><a href="https://callvalue.lovable.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white">CallValue</a></li>
             </ul>
           </nav>
 
